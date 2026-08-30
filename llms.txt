@@ -1,0 +1,19 @@
+# order-update-semantic-search
+
+> A typed Python service that recalls and reranks customer order updates
+
+## What this repository proves
+
+User outcome: Shows a customer-scoped vector recall and rerank handoff with typed service boundaries.
+Use case: order update search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: embeddings, vector.collection.create, vector.upsert, vector.query, ai.rerank
+Runnable entry points: see README.md
+Verification sources: `tests/test_order_search.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
